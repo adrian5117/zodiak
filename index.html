@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <title>Wróżka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="info">
+            <!-- <h1>Magic 8Ball</h1> -->
+            <p>Podaj swoje imię :</p><input type="text" id="tekst"><button class="zatwierdz">Zatwierdz</button><br>
+            <p class="error"></p>
+        </div>
+        <div class="profesor-img">
+            <img src="profesor.png" alt="Billa numer 8" class="shake-animation">
+        </div>
+        
+        <div class="question-area">
+            <!-- <h2>Zadaj pytanie:</h2> -->
+            <!-- <input type="text"> -->
+            <p class="answer"></p>
+            <p class="error welcome-animation"></p>
+        </div>
+    </div>
+    <div class="urodzenie ">
+        <label for="dzień">Dzień urodzenia</label>
+        <input type="number" id="dzien">
+        <label for="miesiac">Wybierz miesiąc urodzenia</label>
+        <select id="miesiac">
+            <option value="0" disabled selected>miesiąć</option>
+            <option value="Styczeń">Styczeń</option>
+            <option value="Luty">Luty</option>
+            <option value="Marzec">Marzec</option>
+            <option value="Kwiecień">Kwiecień</option>
+            <option value="Maj">Maj</option>
+            <option value="Czerwiec">Czerwiec</option>
+            <option value="Lipiec">Lipiec</option>
+            <option value="Sierpień">Sierpień</option>
+            <option value="Wrzesień">Wrzesień</option>
+            <option value="Październik">Październik</option>
+            <option value="Listopad">Listopad</option>
+            <option value="Grudzień">Grudzień</option>
+        </select>
+        <button class="btn">Opowiedz</button>
+        <p class="answer2"></p>
+        
+    </div>
+    
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</body>
+
+</html>
